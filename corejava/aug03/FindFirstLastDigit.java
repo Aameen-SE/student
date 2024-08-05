@@ -20,10 +20,6 @@ public class FindFirstLastDigit {
         System.out.println("First Digit"+num);
 
     }
-    public static void lastDigit(int num)
-    {
-        num = num%10;
-        System.out.println("Last Digit :"+num);
-    }
+
 
 }
