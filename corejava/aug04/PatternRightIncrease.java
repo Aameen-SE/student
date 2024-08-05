@@ -1,0 +1,22 @@
+package corejava.aug04;
+
+public class PatternRightIncrease {
+    public static void main(String[] args) {
+        //          *
+        //		   **
+        //	      ***
+        //	     ****
+
+        int num=4;
+        for(int i=1;i<=num;i++){
+            for(int space=num;space>=i;space--){
+                System.out.print(" ");
+            }
+            for(int j=1;j<=i;j++)
+            {
+                System.out.print("*");
+            }
+            System.out.println("");
+        }
+    }
+}
