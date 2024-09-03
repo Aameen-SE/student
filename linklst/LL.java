@@ -1,7 +1,8 @@
 package linklst;
 
 public class LL {
-    Node head;
+   private Node head;
+           private Node tail;
     private int size;
         LL(){
             this.size=0;
@@ -34,13 +35,13 @@ public class LL {
         Node newNode= new Node(data);
         if(head==null){
             head=newNode;
+            tail=newNode;
             return;
         }
-        Node currNode = head;
-        while(currNode.next!=null){
-            currNode=currNode.next;
+        else {
+            tail.next=newNode;
+            tail=newNode;
         }
-        currNode= newNode;
     }
     public void printList(){
         if(head==null){
@@ -89,19 +90,8 @@ public class LL {
 
     public static void main(String[] args) {
     LL list = new LL();
-    list.addFirst("a");
-    list.addFirst("is");
-    list.printList();
-        System.out.println( "Size of Linked List :"+list.getSize());
-        list.addFirst("this");
-        list.addLast("list");
-        list.printList();
-        System.out.println( "Size of Linked List :"+list.getSize());
-        list.deleteFirst();
-        list.printList();
-        System.out.println( "Size of Linked List :"+list.getSize());
-        list.deleteLast();
-        list.printList();
-        System.out.println( "Size of Linked List :"+list.getSize());
+   list.addLast("This");
+  list.addLast("is");
+  list.printList();
     }
 }
