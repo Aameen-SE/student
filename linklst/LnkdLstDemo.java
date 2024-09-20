@@ -18,7 +18,7 @@ public class LnkdLstDemo {
         if(head==null){
             head=newNode;
             tail=newNode;
-            return;
+
         }else {
             tail.next=newNode;
             tail=newNode;
