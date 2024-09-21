@@ -15,9 +15,7 @@ public class Recipe1 extends  AbstRecipe{
 
     public static void main(String[] args) {
         Recipe1 rec = new Recipe1();
-        rec.doTheDish();
-        rec.getReady();
-        rec.cleanUp();
+        rec.execute();
     }
 
 }
