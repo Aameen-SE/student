@@ -1,6 +1,7 @@
 package fnctionalprogramming.revise;
 
 import java.util.List;
+import java.util.stream.Collectors;
 import java.util.stream.IntStream;
 
 public class Dec01 {
@@ -20,6 +21,7 @@ public class Dec01 {
         //print odd and even from the list
         //odd
         num.stream().filter(e-> e%2==1).forEach(e-> System.out.println(e));
+        System.out.println(num.stream().filter(e->e%2==1).collect(Collectors.toList()));
         // sum of odd num in list
         int oddSum=num.stream().filter(e->e%2==1).reduce(0,(n1,n2)->n1+n2);
         System.out.println("Odd Number sum : "+oddSum);
