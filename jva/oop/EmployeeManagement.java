@@ -1,4 +1,4 @@
-package jva;
+package jva.oop;
 //3. Employee Management
 //Employee: id, name, salary
 //
