@@ -1,4 +1,4 @@
-package jva;
+package jva.oop;
 
 //1. Student Management
 //Student: rollNo, name, course
