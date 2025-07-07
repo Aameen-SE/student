@@ -43,7 +43,7 @@ class EnrollmentComp implements Comparator<Course> {
 
     @Override
     public int compare(Course o1, Course o2) {
-        return o2.getEnrollmentCount()- o1.getEnrollmentCount()
+        return o2.getEnrollmentCount()- o1.getEnrollmentCount();
     }
 }
 public class CourseMain {
