@@ -7,7 +7,19 @@ import java.util.Scanner;
 public class ScannerProgram {
 
     public static void main(String[] args) {
-        //
+
+        //Scanner
+        // int - sc.nextInt();
+        //byte- sc.nextByte();
+        //float
+        //double
+        //long
+        //short
+        //boolean
+        // character
+        // string   // one word - sc.next;
+        // one line - sc.nextLine();
+
         Scanner input  = new Scanner(System.in);
 
         System.out.println("Enter the first value  ");//print
