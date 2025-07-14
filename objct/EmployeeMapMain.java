@@ -62,10 +62,7 @@ public class EmployeeMapMain {
 
         employee.put(emp1,"HR");
         employee.put(emp2,"IT");
-
-
-        System.out.println("Emp3 : "+employee.get(emp3));
-
+        employee.put(emp3,"Worker");
         for(Map.Entry<EmployeeMap,String> e : employee.entrySet()){
             System.out.println(e.getKey()+" = "+e.getValue());
         }
