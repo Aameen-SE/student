@@ -52,12 +52,12 @@ class Book{
 
         Book other = (Book) obj;
 
-        return this.id==other.id && this.name.equals(other.name)&&this.price==other.price;
+        return  this.name.equals(other.name)&&this.price==other.price;
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(id,name,price);
+        return Objects.hash(name,price);
     }
 }
 public class BookMain {
@@ -71,6 +71,9 @@ public class BookMain {
         Book book3 = new Book(135,"Everyday Struggle",155);
         Book book4 = new Book(145,"The Power",145);
 
+        //
+
+
 
         bookMap.put(book1,"Shelf 1");
         bookMap.put(book2,"Shelf 3");
@@ -78,6 +81,10 @@ public class BookMain {
 
         // as the id  name and price is same
         System.out.println("Book4 : "+bookMap.get(book4));
+        System.out.println(bookMap.get(book2));
+        book2.setId(666);
+
+        System.out.println("After changing  id : "+bookMap.get(book2));
 
         for(Map.Entry<Book,String> b : bookMap.entrySet()){
             System.out.println(b.getKey()+" = "+b.getValue());
