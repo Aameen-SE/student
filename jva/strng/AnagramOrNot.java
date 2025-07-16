@@ -5,7 +5,7 @@ import java.util.Arrays;
 public class AnagramOrNot {
     public static void main(String[] args) {
         String input1 = "Silent";
-        String input2 ="Listan";
+        String input2 ="Listen";
         isAnagram(input1,input2);
 
     }
