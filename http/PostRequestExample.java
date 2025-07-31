@@ -27,7 +27,8 @@ public class PostRequestExample {
 
           HttpResponse<String> response = client.send(request, HttpResponse.BodyHandlers.ofString());
             System.out.println("Status Code : "+response.statusCode());
-            System.out.println("Response : "+response.body());
+            System.out.println("Response : " +
+                    "3"+response.body());
 
         }catch(Exception e){
             e.printStackTrace();
