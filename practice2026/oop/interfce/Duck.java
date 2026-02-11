@@ -1,0 +1,19 @@
+package practice2026.oop.interfce;
+
+public class Duck implements Flyable,Swimmable{
+    @Override
+    public void fly() {
+        System.out.println("Duck is flying");
+    }
+
+    @Override
+    public void swim() {
+        System.out.println("Duck is swimming");
+    }
+
+    public static void main(String[] args) {
+        Duck duck = new Duck();
+        duck.fly();
+        duck.swim();
+    }
+}
